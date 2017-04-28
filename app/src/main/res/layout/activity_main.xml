@@ -51,11 +51,13 @@
         <Button
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="15dp"
-            android:text="Login" />
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="18dp"
+            android:background="#E65100"
+            android:text="Login"
+            android:textColor="@android:color/background_light" />
     </LinearLayout>
 
     <LinearLayout
@@ -78,7 +80,10 @@
             android:id="@+id/btnRegister"
             android:layout_width="120dp"
             android:layout_height="50dp"
-            android:text="Register" />
+            android:layout_marginTop="5dp"
+            android:background="#2E7D32"
+            android:text="Register"
+            android:textColor="@android:color/white" />
     </LinearLayout>
 </RelativeLayout>
 
