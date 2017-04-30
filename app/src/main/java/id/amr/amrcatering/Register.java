@@ -1,5 +1,6 @@
 package id.amr.amrcatering;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.ActionBar;
@@ -14,7 +15,7 @@ public class Register extends AppCompatActivity {
     protected Cursor cursor;
     DataHelper dbhelper;
     EditText eNama, eEmail, eTelp, ePass;
-    Button bReg;
+    Button bReg, bUser;
 
 
 
@@ -31,6 +32,15 @@ public class Register extends AppCompatActivity {
         eTelp = (EditText) findViewById(R.id.editTelp);
         ePass = (EditText) findViewById(R.id.editPassword);
         bReg = (Button) findViewById(R.id.btnRegister);
+        bUser = (Button) findViewById(R.id.btnCekUser);
+
+        bUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), user.class);
+                startActivity(i);
+            }
+        });
 
         bReg.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +56,8 @@ public class Register extends AppCompatActivity {
             }
         });
     }
+
+
 
     public boolean onSupportNavigateUp(){
         finish();
