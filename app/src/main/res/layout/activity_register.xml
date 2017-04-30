@@ -9,11 +9,12 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="380dp"
         android:layout_alignParentStart="true"
         android:orientation="vertical"
         android:scrollbarAlwaysDrawHorizontalTrack="false"
-        android:scrollbars="horizontal|vertical">
+        android:scrollbars="horizontal|vertical"
+        android:id="@+id/linearLayout2">
 
         <TextView
             android:id="@+id/txtNama"
@@ -93,5 +94,14 @@
             android:background="#E65100"
             android:text="Register"
             android:textColor="@android:color/white" />
+
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnListUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:text="Cek User" />
 </RelativeLayout>
